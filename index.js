@@ -154,9 +154,8 @@ function appleIndex(fruits) {
 */
 function isItAnApple(arg) {
   const isApple = []
-  for (let i=0;i<arg.length;i++){
-    return (arg[i] === 'apples') ? true : false
-  }
+  for (let i=0;i<arg.length;i++) {isApple.push((arg[i]==='apple') ? true : false)}
+  return isApple
 }
 
 
