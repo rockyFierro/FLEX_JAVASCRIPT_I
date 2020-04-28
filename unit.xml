@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.020000000000000004" tests="24" failures="22">
+  <testsuite name="Root Suite" timestamp="2020-04-24T22:19:19" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="addNumbers()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="0" time="0.002">
+    <testcase name="addNumbers() can add two numbers" time="0.002" classname="can add two numbers">
+    </testcase>
+  </testsuite>
+  <testsuite name="sayGoodbye()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="0" time="0">
+    <testcase name="sayGoodbye() can say goodbye" time="0" classname="can say goodbye">
+    </testcase>
+  </testsuite>
+  <testsuite name="temperatureCtoF()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0.003">
+    <testcase name="temperatureCtoF() should convert temperature" time="0.003" classname="should convert temperature">
+      <failure message="expected undefined to deeply equal 104" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal 104
+    at Context.<anonymous> (test/index.test.js:104:36)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="temperatureInF()" timestamp="2020-04-24T22:19:19" tests="2" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="2" time="0">
+    <testcase name="temperatureInF() should return temperature in F" time="0" classname="should return temperature in F">
+      <failure message="expected undefined to deeply equal &apos;66F&apos;" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal '66F'
+    at Context.<anonymous> (test/index.test.js:111:40)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="temperatureInF() should convert from C" time="0" classname="should convert from C">
+      <failure message="expected undefined to deeply equal &apos;104F&apos;" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal '104F'
+    at Context.<anonymous> (test/index.test.js:116:40)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="makePersonObject()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0.002">
+    <testcase name="makePersonObject() makes an object of the right shape" time="0.002" classname="makes an object of the right shape">
+      <failure message="expected undefined to deeply equal { Object (id, name, ...) }" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal { Object (id, name, ...) }
+    at Context.<anonymous> (test/index.test.js:125:61)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getName()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0.001">
+    <testcase name="getName() makes an object of the right shape" time="0.001" classname="makes an object of the right shape">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:131:32)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="appleIndex()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0">
+    <testcase name="appleIndex() should find the index of &apos;apple&apos;" time="0" classname="should find the index of &apos;apple&apos;">
+      <failure message="expected undefined to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal 1
+    at Context.<anonymous> (test/index.test.js:137:58)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="isItAnApple" timestamp="2020-04-24T22:19:19" tests="2" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="2" time="0.001">
+    <testcase name="isItAnApple should correctly identify apple in the array" time="0.001" classname="should correctly identify apple in the array">
+      <failure message="expected undefined to deeply equal [ true, false, true, false, false ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ true, false, true, false, false ]
+    at Context.<anonymous> (test/index.test.js:143:79)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="isItAnApple should only identify exact matches" time="0" classname="should only identify exact matches">
+      <failure message="expected undefined to deeply equal [ false, false, false, false, true ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ false, false, false, false, true ]
+    at Context.<anonymous> (test/index.test.js:147:82)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getCarInfoByIndex()" timestamp="2020-04-24T22:19:19" tests="2" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="2" time="0.001">
+    <testcase name="getCarInfoByIndex() returns a string containing the car_make" time="0.001" classname="returns a string containing the car_make">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:153:48)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="getCarInfoByIndex() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:156:48)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getLastCarInfo()" timestamp="2020-04-24T22:19:19" tests="2" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="2" time="0">
+    <testcase name="getLastCarInfo() returns a string containing the car_make" time="0" classname="returns a string containing the car_make">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:162:42)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="getLastCarInfo() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:167:42)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="getModelYears()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0">
+    <testcase name="getModelYears() returns an array of car years" time="0" classname="returns an array of car years">
+      <failure message="expected undefined to deeply equal [ Array(50) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(50) ]
+    at Context.<anonymous> (test/index.test.js:177:41)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="STRETCH: getCarInfoById()" timestamp="2020-04-24T22:19:19" tests="2" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="2" time="0">
+    <testcase name="STRETCH: getCarInfoById() returns a string containing the car_make" time="0" classname="returns a string containing the car_make">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:184:45)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="STRETCH: getCarInfoById() returns a string containing the car_model" time="0" classname="returns a string containing the car_model">
+      <failure message="object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given" type="AssertionError"><![CDATA[AssertionError: object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given
+    at Context.<anonymous> (test/index.test.js:187:45)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="STRETCH: getOlderCars()" timestamp="2020-04-24T22:19:19" tests="3" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="3" time="0.005">
+    <testcase name="STRETCH: getOlderCars() returns an empty array for a very low max year" time="0.001" classname="returns an empty array for a very low max year">
+      <failure message="expected undefined to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal []
+    at Context.<anonymous> (test/index.test.js:194:43)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="STRETCH: getOlderCars() returns the entire inventory for a very high max year" time="0.003" classname="returns the entire inventory for a very high max year">
+      <failure message="expected undefined to deeply equal [ Array(50) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(50) ]
+    at Context.<anonymous> (test/index.test.js:198:46)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="STRETCH: getOlderCars() returns some cars when the max year is somewhere in the middle" time="0.001" classname="returns some cars when the max year is somewhere in the middle">
+      <failure message="expected undefined to deeply equal [ Array(7) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(7) ]
+    at Context.<anonymous> (test/index.test.js:202:46)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="STRETCH: getGermanCars()" timestamp="2020-04-24T22:19:19" tests="1" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="1" time="0.001">
+    <testcase name="STRETCH: getGermanCars() returns an array with the correct cars" time="0.001" classname="returns an array with the correct cars">
+      <failure message="expected undefined to deeply equal [ Array(8) ]" type="AssertionError"><![CDATA[AssertionError: expected undefined to deeply equal [ Array(8) ]
+    at Context.<anonymous> (test/index.test.js:210:41)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="STRETCH: carMaker()" timestamp="2020-04-24T22:19:19" tests="3" file="/Users/sanctgrael/LambdaRepos/week5/FLEX_JAVASCRIPT_I/test/index.test.js" failures="3" time="0.004">
+    <testcase name="STRETCH: carMaker() makes a car with an odometer set to the correct value" time="0.002" classname="makes a car with an odometer set to the correct value">
+      <failure message="Cannot read property &apos;odometer&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'odometer' of undefined
+    at Context.<anonymous> (test/index.test.js:216:25)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="STRETCH: carMaker() driving the car increases the odometer" time="0.001" classname="driving the car increases the odometer">
+      <failure message="Cannot read property &apos;drive&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'drive' of undefined
+    at Context.<anonymous> (test/index.test.js:220:9)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+    <testcase name="STRETCH: carMaker() driving the car returns the updated odometer" time="0.001" classname="driving the car returns the updated odometer">
+      <failure message="Cannot read property &apos;drive&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'drive' of undefined
+    at Context.<anonymous> (test/index.test.js:226:25)
+    at processImmediate (internal/timers.js:456:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

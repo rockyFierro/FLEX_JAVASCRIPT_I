@@ -213,7 +213,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`
 }
 
 /**
@@ -227,8 +227,8 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(last){
+  return `This is a ${last[last.length-1].car_make} ${last[last.length-1].car_model}`
 }
 
 /**
@@ -240,9 +240,13 @@ function getLastCarInfo(/* code here */) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
-}
+function getModelYears(years) {
+  const carYears = []
+  for(let i=0 ; i<years.length ; i++){
+    carYears.push(years[i].car_year)
+  } 
+  return carYears
+} //come back on saturday to look into working in a rest operator to make this shorter without methods
 
 /**
  * ### Challenge `getCarInfoById`
@@ -258,8 +262,8 @@ function getModelYears(/* code here */) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
+function getCarInfoById(carInv,carId) {
+  return `This is a ${carInv[carId].car_make} ${carInv[carId].car_model}`;
 }
 
 /**
@@ -270,15 +274,7 @@ function getCarInfoById(/* code here */) {
  * @instructions
  * We need a utility to find older cars!
  * getOlderCars takes two arguments:
- *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
- *     (2) a number which is the desired max year.
- * getOlderCars returns an array containing all the cars
- * with a `car_year` which is at most the given desired max year,
- * in the same order as they appear in the original inventory.
-*/
-function getOlderCars(/* code here */) {
-  /* code here */
-}
+ *     (1) an array which is an inventory of cars like the one inside /data/inventory.js. *     (2) a number which is the desired max year. * getOlderCars returns an array containing all the cars * with a `car_year` which is at most the given desired max year, * in the same order as they appear in the original inventory. */ function getOlderCars(/* code here */) { /* code here */ }
 
 /**
  * ### Challenge `getGermanCars`
