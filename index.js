@@ -262,8 +262,9 @@ function getModelYears(years) {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(carInv,carId) {
-  return `This is a ${carInv[carId].car_make} ${carInv[carId].car_model}`;
+function getCarInfoById(carInv,id) {
+  carId = id - 1
+  return `This is a ${carInv[carId].car_make}${carInv[carId].car_model}`;
 }
 
 /**
@@ -274,23 +275,41 @@ function getCarInfoById(carInv,carId) {
  * @instructions
  * We need a utility to find older cars!
  * getOlderCars takes two arguments:
- *     (1) an array which is an inventory of cars like the one inside /data/inventory.js. *     (2) a number which is the desired max year. * getOlderCars returns an array containing all the cars * with a `car_year` which is at most the given desired max year, * in the same order as they appear in the original inventory. */ function getOlderCars(/* code here */) { /* code here */ }
+ *     (1) an array which is an inventory of cars like the one inside /data/inventory.js. 
+ *     (2) a number which is the desired max year. 
+ * getOlderCars returns an array containing all the cars * with a `car_year` which is at most the given desired max year, 
+ * in the same order as they appear in the original inventory. */ 
+
+  function getOlderCars(inventory, latest_year){
+    legacyModels = []
+    for (let i = 0; i < inventory.length; i++ ){
+      inventory[i].car_year <= latest_year ? legacyModels.push(inventory[i]) : console.log(`The ${inventory[i].car_model} is only ` + (2020 - inventory[i].car_year) + ` years old.`) 
+    }
+    return legacyModels
+}
 
 /**
- * ### Challenge `getGermanCars`
+ * ### Challenge `getGermanCars`'Not old enough.'
  * * THIS ONE IS A STRETCH GOAL. ATTEMPT IT ONLY AFTER
  * COMPLETING ALL NON-STRETCH CHALLENGES IN THE REPOSITORY!
  * 
  * @instructions
- * We need a utility to find German cars!
+ * We need a utility to find German cars!'Not old enough.'
  * getGermanCars takes a single argument:
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getGermanCars returns an array containing all the cars
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
 */
-function getGermanCars(/* code here */) {
-  /* code here */
+function getGermanCars(inventory) {
+  autos = []
+  for (let i = 0 ; i < inventory.length ; i++ )
+    inventory[i].car_make ===   'Audi' ? autos.push(inventory[i])
+      : inventory[i].car_make ===   'Mercedes-Benz' ? autos.push(inventory[i])
+      : inventory[i].car_make ===   'Volkswagen' ? autos.push(inventory[i])
+      : inventory[i].car_make ===   'BMW' ? autos.push(inventory[i])
+      : console.log (`${inventory[i].car_make} is not German.`)
+  return autos
 }
 
 /**
@@ -306,8 +325,7 @@ function getGermanCars(/* code here */) {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(miles) {
 }
 
 /// ////// END OF CHALLENGE /////////
